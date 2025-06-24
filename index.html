@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mr. Satyam Shekhar | Software Dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS (Animate On Scroll) CDN -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
       body { font-family: 'Inter', sans-serif; }
@@ -13,10 +16,10 @@
   <body class="bg-gray-50 text-gray-800">
 
     <!-- Hero -->
-    <section class="bg-gray-900 text-white py-20 px-6 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold">Mr. Satyam Shekhar</h1>
-      <p class="text-xl mt-4">Software Developer</p>
-    </section>
+    <section class="bg-gray-900 text-white py-20 px-6 text-center"data-aos="fade-down">
+  <h1 class="text-4xl sm:text-5xl font-bold">Mr. Satyam Shekhar</h1>
+  <p class="text-xl mt-4">Software Developer</p>
+</section>
 
     <!-- About -->
     <section class="py-12 px-6 max-w-3xl mx-auto text-center">
@@ -27,13 +30,15 @@
     <!-- Skills -->
     <section class="bg-white py-12 px-6">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl font-semibold mb-6 text-center text-gray-800">Skills</h2>
+        <h2 class="text-2xl font-semibold mb-6 text-center text-gray-800"data-aos="zoom-in">Skills</h2>
         <div class="flex flex-wrap justify-center gap-4">
-          <span class="bg-gray-900 text-white px-4 py-2 rounded-full">Java</span>
-          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">OOPs</span>
-          <span class="bg-gray-900 text-white px-4 py-2 rounded-full">Python</span>
-          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Spring</span>
-          <span class="bg-gray-900 text-white px-4 py-2 rounded-full">SQL</span>
+          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full"data-aos="zoom-in">Java</span>
+          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full"data-aos="zoom-in">OOPs</span>
+          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full"data-aos="zoom-in">Python</span>
+          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full"data-aos="zoom-in">Spring</span>
+          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full"data-aos="zoom-in">SQL</span>
+          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full"data-aos="zoom-in">LLD</span>
+          <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full"data-aos="zoom-in">DSA</span>
         </div>
       </div>
     </section>
@@ -43,23 +48,23 @@
       <div class="max-w-4xl mx-auto">
         <h2 class="text-2xl font-semibold mb-6 text-center text-gray-800">Projects</h2>
         <div class="grid gap-6">
-          <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-right">
             <h3 class="text-xl font-semibold text-gray-900">Project 1</h3>
             <p class="text-gray-600 mt-2">Description for Project 1 goes here. You can edit this later.</p>
           </div>
-          <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-right">
             <h3 class="text-xl font-semibold text-gray-900">Project 2</h3>
             <p class="text-gray-600 mt-2">Description for Project 2 goes here. You can edit this later.</p>
           </div>
-          <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-right">
             <h3 class="text-xl font-semibold text-gray-900">Project 3</h3>
             <p class="text-gray-600 mt-2">Description for Project 3 goes here. You can edit this later.</p>
           </div>
-          <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-right">
             <h3 class="text-xl font-semibold text-gray-900">Project 4</h3>
             <p class="text-gray-600 mt-2">Description for Project 4 goes here. You can edit this later.</p>
           </div>
-          <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-right">
             <h3 class="text-xl font-semibold text-gray-900">Project 5</h3>
             <p class="text-gray-600 mt-2">Description for Project 5 goes here. You can edit this later.</p>
           </div>
@@ -83,6 +88,12 @@
     <footer class="bg-white text-gray-500 text-center py-4 text-sm">
       &copy; 2025 Mr. Satyam Shekhar. Built with 💻 and ☕.
     </footer>
-    
+    <script>
+  AOS.init({
+    once: true,
+    duration: 1000,
+    offset: 100,
+  });
+</script>
   </body>
 </html>
